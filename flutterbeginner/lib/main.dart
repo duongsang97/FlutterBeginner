@@ -1,18 +1,17 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
-
+import 'package:flutterbeginner/screens/welcome/welcome.dart';
 void main() => runApp(Namabank());
 
-class NamaBank extends StatelessWidget{
-  @override 
+class Namabank extends StatelessWidget{
   Widget build(BuildContext context){
-    return MeterialApp(
-      Title: 'Hello world',
-      Theme: ThemeData(primaryColor: Colors.blueGrey),
-      Body: Row(children: <Widget>[
-        
-      ],)
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'NamABank',
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.yellow
+      ),
+      home: Welcome()
     );
   }
 }
